@@ -9,7 +9,8 @@ I principali linguaggi con cui vengono create le pagine web sono 3 ognuno dei qu
 * __javascript__ In informatica JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso (mouse, tastiera, caricamento della pagina ecc...) (da [wikipedia](https://it.wikipedia.org/wiki/JavaScript)).  
 Le pagine Web non sono l'unico posto in cui viene utilizzato JavaScript. Molti programmi desktop, server e alcuni database usano JavaScript come linguaggio di programmazione. Torneremo su questo argomento in modo più approfondito nei prossimi paragrafi.
 
-Ecco un [esempio](http://embed.plnkr.co/hVwcOWilsbU0T2IjV6Da/) di come questi 3 linguaggi lavorano insieme  
+Ecco un [esempio](http://embed.plnkr.co/hVwcOWilsbU0T2IjV6Da/) di come questi 3 linguaggi lavorano insieme.  
+Prima di passare a cose più avanzate ti consiglio di prendere familiarità con questi 3 pilastri dello sviluppo web.  
 
 ## Come funziona internet 🤔
 
@@ -18,7 +19,7 @@ Non serve imparare alla perfezione i dettagli tecnici, ma avere un'idea di come 
 
 ### __Browsers__
 
-In informatica il web browser, traducibile come navigatore) è un'applicazione per l'acquisizione, la presentazione e la navigazione di risorse sul web. Tali risorse (come pagine web, immagini o video) sono messe a disposizione sul World Wide Web (la rete globale che si appoggia su Internet), su una rete locale o sullo stesso computer dove il browser è in esecuzione. Il programma implementa da un lato le funzionalità di client per il protocollo HTTP, che regola il download delle risorse dai server web a partire dal loro indirizzo URL; dall'altro quelle di visualizzazione dei contenuti ipertestuali (solitamente all'interno di documenti HTML) e di riproduzione di contenuti multimediali. (da [wikipedia](https://it.wikipedia.org/wiki/Browser))  
+In informatica il web browser (traducibile come _navigatore_) è un'applicazione per l'acquisizione, la presentazione e la navigazione di risorse sul web. Tali risorse (come pagine web, immagini o video) sono messe a disposizione sul World Wide Web (la rete globale che si appoggia su Internet), su una rete locale o sullo stesso computer dove il browser è in esecuzione. Il programma implementa da un lato le funzionalità di client per il protocollo HTTP, che regola il download delle risorse dai server web a partire dal loro indirizzo URL; dall'altro quelle di visualizzazione dei contenuti ipertestuali (solitamente all'interno di documenti HTML) e di riproduzione di contenuti multimediali. (da [wikipedia](https://it.wikipedia.org/wiki/Browser))  
 
 In pratica un browser Web o browser è un programma che recupera e visualizza pagine dal Web e consente agli utenti di accedere a ulteriori pagine tramite l'utilizzo di _hyperlinks_.
 I broweser più utilizzati sono:
@@ -104,7 +105,7 @@ I moduli in Node.js non sono molto diversi dai _packages_ di Java o di Python pe
 * __Core Modules__: sono quelli che vengono precompilati con la libreria Node.js. Lo scopo dei core modules è quello di fornire agli sviluppatori funzionalità spesso ricorrenti (HTTP, URL, EVENTS, FILE SYSTEM..) che, se non fossero disponibili, comporterebbero un compito noioso per gli sviluppatori perché dovrebbero riscriverle ogni volta.
 * __User Defined Modules__: questi moduli, definiti dagli utenti, sono quelli che vengono sviluppati per uno scopo specifico e sono necessari quando i _core modules_ non sono in grado di soddisfare la funzionalità desiderata.
 
-Un package può essere un modulo o contenere più node's modules. Nei prossimi paragrafi ne parleremo in modo più approfondito.
+Un package può essere un modulo o contenere più node's modules. Questi pacchetti vengono gestiti con __npm__ e nei prossimi paragrafi ne parleremo in modo più approfondito.
 
 ### __npm__
 
@@ -116,25 +117,55 @@ NPM è uno strumento pensato per la gestione e la condivisione di pacchetti java
 * __Command Line Interface (CLI)__ che viene eseguito da un terminale ed è il modo in cui la maggior parte degli sviluppatori interagisce con npm;
 * __registry__ un grande database che racchiude tutti i software javascript pubblicati su npm e da dove è possibile scaricarli,
 
-## __installazione di node sulla tua macchina 💻__
+## __Installazione di node sulla tua macchina 💻__
 
+Dopo averti annoiato con la teoria è ora di iniziare un po di pratica  💪😃🎉.
+Vai sul [sito ufficiale di node](https://nodejs.org/it/) e scarica l'ultima versione stabile (nel momento in cui scrivo è la 10.15.3) per il tuo sistema operativo (macOS, Windows, Linux).
+Come puoi vedere ci viene proposta l'ultima versione stabile e la versione con le ultime features.
+Segui la guida (se hai problemi cerca su Google è pieno di articoli e tutorial) e completa l'installazione di node.
 
 ## Pwa e Angular
 
-### __cosa sono le pwa__
+![angular logo](./covers/angular.png)  
 
-### __introduzione ad angular__
+Progressive Web App (PWA, in italiano applicazioni web progressive) è un termine, coniato in origine da Google, che si riferisce ad applicazioni web che vengono sviluppate e caricate come normali pagine web, ma che si comportano in modo simile alle applicazioni native quando utilizzate su un dispositivo mobile. Diversamente dalle applicazioni tradizionali, le progressive web apps sono un ibrido tra le normali pagine web (o siti web) e le applicazioni mobili. Questo modello di applicazioni cerca di combinare le possibilità offerte dalla maggior parte dei moderni browser con i benefici dell'utilizzo in mobilità.  
+Il termine Progressive si riferisce al fatto che, dal punto di vista dell'esperienza utente (UX), queste applicazioni possono abilitare una serie di funzionalità aggiuntive alle normali pagine web a seconda delle funzionalità offerte dal dispositivo (da [wikipedia](https://it.wikipedia.org/wiki/Progressive_Web_App)).
 
-### __angular cli__
+Esistono diversi frameworks e librerie per sviluppare App e Web App al giorno d'oggi tra queste ricordiamo:
 
-### __installazione di angular cli__
+* [Angular](https://angular.io/)
+* [React.js](https://reactjs.org/)
+* [Vue.js](https://vuejs.org/)
+* [Ember.js](https://emberjs.com/)
+* [Preact.js](https://preactjs.com/)
+* e molti altri...
 
+Se siete curiosi di sapere quanto è come vengono utilizzati queste fantastiche tecnologie, date un'occhiata a [The State of JavaScript 2018](https://2018.stateofjs.com/), una fotografia del mondo di javascript moderno in una spendida web app, sviluppata con React e Gatsby, che di sicuro potrà ispirarvi.
 
-## La tua prima app Angular
+In questo corso, come dice il titolo, abbiamo deciso di usare Angular, un framework sviluppato e mantenuto da Google e che è uno degli strumenti tra i più usati e richiesti nell'ambito dello sviluppo web moderno.
+
+### __Introduzione ad angular__
+
+__Cos'è Angular?__  
+Angular è un framework Javascript per creare app web interattive. È progettato per piattaforme Web, desktop e mobile. Per creare un app con Angular utilizzamo HTML, CSS e Javascript. Anzi non utilizziamo direttamente javascript, ma Typescript (un superset tipizzato di Javascript scalabile), una specie di versione più severa di Javascript fornita di funzionalità di aggiuntive. Il codice Typescript viene successivamente compilato in javascript così da poter essere eseguito nei browsers.
+
+__Angualr CLI__  
+Così come node, anche Angular viene fornito con una _Command Line Interface_ o CLI, uno strumento che ci consente di lanciare comandi da un terminale. Questi comandi ci consentono di creare nuove applicazioni, creare componenti, moduli e services, eseguire localmente la nosta app e moltissime altre cose.
+
+## __Installazione dell'Angular cli  💻__
+
+Il CLI di Angualr deve essere installato a livello globale sulla tua macchina in modo da poterlo usare da qualsiasi parte del filesystem.  
+Per installare il CLI di Angular usando npm, apri una finestra del terminale/console e lancia il seguente comando:
+
+> npm install -g @angular/cli
+
+Fatto, ora siamo pronti per fare bootstrap della nosta prima app Angular 🎊!
+
+## La tua prima app Angular 🚀
 
 ### __il tuo primo progetto Angular__
 
-### __start the project  🚀__
+### __start the project__
 
 ### __aggiungiamo bootstrap al progetto__
 
