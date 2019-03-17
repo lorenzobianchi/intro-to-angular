@@ -142,7 +142,9 @@ Esistono diversi frameworks e librerie per sviluppare App e Web App al giorno d'
 
 Se siete curiosi di sapere quanto è come vengono utilizzati queste fantastiche tecnologie, date un'occhiata a [The State of JavaScript 2018](https://2018.stateofjs.com/), una fotografia del mondo di javascript moderno in una spendida web app, sviluppata con React e Gatsby, che di sicuro potrà ispirarvi.
 
-In questo corso, come dice il titolo, abbiamo deciso di usare Angular, un framework sviluppato e mantenuto da Google e che è uno degli strumenti tra i più usati e richiesti nell'ambito dello sviluppo web moderno.
+In questo corso, come dice il titolo, abbiamo deciso di usare Angular, un framework sviluppato e mantenuto da Google e che è uno degli strumenti tra i più usati e richiesti nell'ambito dello sviluppo web moderno.  
+
+[Qui](https://stackblitz.com/edit/angular-qxsypd) è possibile trovare un esempio di un'app Angular.
 
 ### __Introduzione ad angular__
 
@@ -163,7 +165,25 @@ Fatto, ora siamo pronti per fare bootstrap della nosta prima app Angular 🎊!
 
 ## La tua prima app Angular 🚀
 
-### __il tuo primo progetto Angular__
+La app Angular vengono sviluppare nel contesto di un'_Angular workspace_, che sarebbe una _directory_ (cartella) che contiene i files per uno o più progetti.  
+Per creare un nuovo workspace e un app iniziale dobbiamo lanciare il comando "__ng new__" seguito dal nome che vogliamo dare al progetto/app:
+
+> ng new my-angular-app
+
+Dopo aver lanciato questo comando ci vengono chieste alcune cose come:  
+
+* il linguaggio di styling che vogliamo utilizzare => selezioniamo CSS
+* se vogliamo che la nostra app abbia il routing => diciamo di si
+
+Inoltre il CLI di Angular si occupa di installare i pacchetti npm necessari e alcune altre dipendenze (questo processo può durare qualche minuto a seconda della macchina che utilizziamo).
+In pratica verranno creati:
+
+* un nuovo workspace con una cartella root chiamata col nome che abbiamo deciso
+* un boilerplate iniziale della nostra app nella sotto-directory __src__ che contiene una semplice app di benvenuto, pronta per essere eseguita,
+* un progetto di test end-to-end (nella sottocartella __e2e__)
+* i file di configurazione correlati
+
+(dalla [doc ufficiale di Angular](https://angular.io/guide/quickstart))
 
 ### __start the project__
 
