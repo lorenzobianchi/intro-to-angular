@@ -58,7 +58,8 @@ Permettetemi di dire che git ci "salva la vita" quando siamo responsabili dello 
 
 ### __Cos'è un VCS__
 
-I _Version Control System_ (sistemi di controllo versione) sono una categoria di strumenti software che aiutano un team di software a gestire le modifiche al codice sorgente nel tempo. Il software di controllo della versione tiene traccia di ogni modifica al codice in un tipo speciale di database. Se viene commesso un errore, gli sviluppatori possono tornare indietro nel tempo e confrontare le versioni precedenti del codice per aiutare a correggere l'errore riducendo al minimo l'interruzione di tutti i membri del team (dalla [guida Bitbucket](https://it.atlassian.com/git/tutorials/what-is-version-control))
+I _Version Control System_ (sistemi di controllo versione) sono una categoria di strumenti software che aiutano un team di software a gestire le modifiche al codice sorgente nel tempo. Il software di controllo della versione tiene traccia di ogni modifica al codice in un tipo speciale di database. Se viene commesso un errore, gli sviluppatori possono tornare indietro nel tempo e confrontare le versioni precedenti del codice per aiutare a correggere l'errore riducendo al minimo l'interruzione di tutti i membri del team.  
+(tradotto dalla [guida Bitbucket](https://it.atlassian.com/git/tutorials/what-is-version-control))
 
 ## Il successo di javascript negli ultimi anni
 
@@ -95,8 +96,8 @@ Inoltre Javascript è anche conosciuto per essere "_The Most Misunderstood Progr
 Uno dei pricipali motici del successo di Javascript negli ultimi anni è proprio __Node.js__.
 
 Node.js è una piattaforma Open source event-driven per l'esecuzione di codice JavaScript Server-side, costruita sul motore JavaScript V8 di Google Chrome. Molti dei suoi moduli base sono scritti in JavaScript, e gli sviluppatori possono scrivere nuovi moduli in JavaScript.
-
-In origine JavaScript veniva utilizzato principalmente lato client. In questo scenario gli script JavaScript, generalmente incorporati all'interno dell'HTML di una pagina web, vengono interpretati da un motore di esecuzione incorporato direttamente all'interno di un Browser. Node.js consente invece di utilizzare JavaScript anche per scrivere codice da eseguire lato server, ad esempio per la produzione del contenuto delle pagine web dinamiche prima che la pagina venga inviata al Browser dell'utente. Node.js in questo modo permette di implementare il cosiddetto paradigma "JavaScript everywhere" (Javascript ovunque), unificando lo sviluppo di applicazioni Web intorno ad un unico linguaggio di programmazione (JavaScript). (da [wikipedia](https://it.wikipedia.org/wiki/Node.js))
+ In origine JavaScript veniva utilizzato principalmente lato client. In questo scenario gli script JavaScript, generalmente incorporati all'interno dell'HTML di una pagina web, vengono interpretati da un motore di esecuzione incorporato direttamente all'interno di un Browser. Node.js consente invece di utilizzare JavaScript anche per scrivere codice da eseguire lato server, ad esempio per la produzione del contenuto delle pagine web dinamiche prima che la pagina venga inviata al Browser dell'utente. Node.js in questo modo permette di implementare il cosiddetto paradigma "JavaScript everywhere" (Javascript ovunque), unificando lo sviluppo di applicazioni Web intorno ad un unico linguaggio di programmazione : __JavaScript__.  
+(da [wikipedia](https://it.wikipedia.org/wiki/Node.js))
 
 ### __Concetto di modulo e di package 📦__
 
@@ -140,7 +141,7 @@ Esistono diversi frameworks e librerie per sviluppare App e Web App al giorno d'
 * [Preact.js](https://preactjs.com/)
 * e molti altri...
 
-Se siete curiosi di sapere quanto è come vengono utilizzati queste fantastiche tecnologie, date un'occhiata a [The State of JavaScript 2018](https://2018.stateofjs.com/), una fotografia del mondo di javascript moderno in una spendida web app, sviluppata con React e Gatsby, che di sicuro potrà ispirarvi.
+Se siete curiosi di sapere quanto e come vengono utilizzati queste fantastiche tecnologie, date un'occhiata a [The State of JavaScript 2018](https://2018.stateofjs.com/), una fotografia del mondo di javascript moderno in una spendida web app, sviluppata con React e Gatsby, che di sicuro potrà ispirarvi.
 
 In questo corso, come dice il titolo, abbiamo deciso di usare Angular, un framework sviluppato e mantenuto da Google e che è uno degli strumenti tra i più usati e richiesti nell'ambito dello sviluppo web moderno.  
 
@@ -159,7 +160,7 @@ Così come node, anche Angular viene fornito con una _Command Line Interface_ o 
 Il CLI di Angualr deve essere installato a livello globale sulla tua macchina in modo da poterlo usare da qualsiasi parte del filesystem.  
 Per installare il CLI di Angular usando npm, apri una finestra del terminale/console e lancia il seguente comando:
 
-> npm install -g @angular/cli
+`npm install -g @angular/cli`
 
 Fatto, ora siamo pronti per fare bootstrap della nosta prima app Angular 🎊!
 
@@ -168,7 +169,7 @@ Fatto, ora siamo pronti per fare bootstrap della nosta prima app Angular 🎊!
 La app Angular vengono sviluppare nel contesto di un'_Angular workspace_, che sarebbe una _directory_ (cartella) che contiene i files per uno o più progetti.  
 Per creare un nuovo workspace e un app iniziale dobbiamo lanciare il comando "__ng new__" seguito dal nome che vogliamo dare al progetto/app:
 
-> ng new my-angular-app
+`ng new my-angular-app`
 
 Dopo aver lanciato questo comando ci vengono chieste alcune cose come:  
 
@@ -185,9 +186,30 @@ In pratica verranno creati:
 
 (dalla [doc ufficiale di Angular](https://angular.io/guide/quickstart))
 
-### __start the project__
+### __Start the project__
 
-### __aggiungiamo bootstrap al progetto__
+Angular include un web server, quindi possiamo facilmente eseguire una _build_ e servire la nostra app in locale sul nostro pc.  
+
+1- Entra nella directory del tuo workspace  
+
+`cd my-angular-app`
+
+2- Fai partire il web server eseguendo il comando "__ng serve__" con l'opzione "__--open__" per aprire direttamente la pagina nel browser del tuo computer.  
+
+`ng serve --open`
+
+Il comando `ng serve` fa partire il server e tiene sotto controllo (in inglese _watches your files_) i tuoi files. Se vengono eseguite modifiche al codice mentre il server sta "girando" e si salva, viene eseguiuta una nuova build con codice aggionarto. In pratica l'app riparte aggiornandosi all'ultimo codice salvato.  
+L'opzione `--open` (che si può lanciare anche con la shortcut `--o`) fa aprire una finestra del tuo browser su [http://localhost:4200/](http://localhost:4200/).  
+
+Fantastico hai appena fatto partire la tua prima app Angular 🎉🎉🎉✌️😺!!!
+
+L'app che sta girando su [http://localhost:4200/](http://localhost:4200/) è solo un , un punto di partenza per iniziare a creare la tua app. Ora puoi creare le tue pagine e i tuoi componenti per strutturare la tua app come vuoi.  
+
+Apri la cartella dove hai creato la tua app nel tuo __editor di testo__ preferito, io personalmete uso [Visual Studio Code]() a mio avviso uno strumento di lavoro fantastico e di cui si parla anche [qui](https://angular.io/guide/language-service#visual-studio-code), nella doc ufficiale di Angular, ma usa l'editor che vuoi, ce ne sono molti validi ([Atom](https://atom.io/), [Sublime Text ](https://www.sublimetext.com/), [Vim](https://www.vim.org/), [Brackets](http://brackets.io/)...) e troverai una struttura del genere:
+
+### __Aggiungiamo bootstrap al progetto__
+
+
 
 ### ___cos’è un framework css___
 
