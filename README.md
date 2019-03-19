@@ -279,6 +279,12 @@ Per ora non preoccupiamoci di tutti questi files di configurazione e iniziamo a 
 > tsconfig.spec.json  
 > tslint.json  
 
+e guardiamo il file __index.html__:  
+![index.html image](./covers/index-html.png)  
+
+Questo documento html è il punto di partenza della nosta app e il codice viene iniettato nel tag `<app-root></app-root>`.  
+Ora apriamo la cartella __app/__ e diamo un'occhiata al file __app.component.ts__:
+![index.html image](./covers/app.component.ts.png)  
 
 ### __Aggiungiamo bootstrap al progetto__
 
