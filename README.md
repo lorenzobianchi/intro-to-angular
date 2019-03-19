@@ -201,11 +201,84 @@ Angular include un web server, quindi possiamo facilmente eseguire una _build_ e
 Il comando `ng serve` fa partire il server e tiene sotto controllo (in inglese _watches your files_) i tuoi files. Se vengono eseguite modifiche al codice mentre il server sta "girando" e si salva, viene eseguiuta una nuova build con codice aggionarto. In pratica l'app riparte aggiornandosi all'ultimo codice salvato.  
 L'opzione `--open` (che si può lanciare anche con la shortcut `--o`) fa aprire una finestra del tuo browser su [http://localhost:4200/](http://localhost:4200/).  
 
+(anche questo tradotto dalla [doc ufficiale di Angular](https://angular.io/guide/quickstart))
+
 Fantastico hai appena fatto partire la tua prima app Angular 🎉🎉🎉✌️😺!!!
 
 L'app che sta girando su [http://localhost:4200/](http://localhost:4200/) è solo un , un punto di partenza per iniziare a creare la tua app. Ora puoi creare le tue pagine e i tuoi componenti per strutturare la tua app come vuoi.  
 
-Apri la cartella dove hai creato la tua app nel tuo __editor di testo__ preferito, io personalmete uso [Visual Studio Code]() a mio avviso uno strumento di lavoro fantastico e di cui si parla anche [qui](https://angular.io/guide/language-service#visual-studio-code), nella doc ufficiale di Angular, ma usa l'editor che vuoi, ce ne sono molti validi ([Atom](https://atom.io/), [Sublime Text ](https://www.sublimetext.com/), [Vim](https://www.vim.org/), [Brackets](http://brackets.io/)...) e troverai una struttura del genere:
+Apri la cartella dove hai creato la tua app nel tuo __editor di testo__ preferito, io personalmete uso [Visual Studio Code](https://code.visualstudio.com/) a mio avviso uno strumento di lavoro fantastico e di cui si parla anche [qui](https://angular.io/guide/language-service#visual-studio-code), nella doc ufficiale di Angular, ma usa l'editor che vuoi, ce ne sono molti validi ([Atom](https://atom.io/), [Sublime Text ](https://www.sublimetext.com/), [Vim](https://www.vim.org/), [Brackets](http://brackets.io/)...) e troverai una struttura del genere:
+
+> ├── e2e  
+> │   ├── protractor.conf.js  
+> │   ├── src  
+> │   │   ├── app.e2e-spec.ts  
+> │   │   └── app.po.ts  
+> │   └── tsconfig.e2e.json  
+> ├── node_modules  
+> │   ├── .........  
+> ├── src  
+> │   ├── app  
+> │   │   ├── app-routing.module.ts  
+> │   │   ├── app.component.html  
+> │   │   ├── app.component.scss  
+> │   │   ├── app.component.spec.ts  
+> │   │   ├── app.component.ts  
+> │   │   └── app.module.ts  
+> │   ├── assets  
+> │   ├── browserslist  
+> │   ├── environments  
+> │   │   ├── environment.prod.ts  
+> │   │   └── environment.ts  
+> │   ├── favicon.ico  
+> │   ├── index.html  
+> │   ├── karma.conf.js  
+> │   ├── main.ts  
+> │   ├── polyfills.ts  
+> │   ├── styles.scss  
+> │   ├── test.ts  
+> │   ├── tsconfig.app.json  
+> │   ├── tsconfig.spec.json  
+> │   └── tslint.json  
+> ├── .gitignore  
+> ├── angular.json  
+> ├── package-lock.json  
+> ├── package.json  
+> ├── README.md  
+> ├── tsconfig.json  
+> └── tslint.json  
+
+😵😱 Ma è un sacco di roba! Come farò a capire qualcosa in mezzo a tutti questi files e cartelle?  
+Non ti preoccupare, un pò alla volta imparerai. Per adesso iniziamo a dare un'occhiata al primo livello di files e cartelle che viene creato dal CLI di Angular quando lanciamo il comando `ng new`:
+
+> * __e2e/__ => questa serve per i test end to end  
+> * __node_modules/__ => moduli node, cioè dipendenze installate attraverso npm
+> * __src/__  => IL CODICE VA QUI!!  
+> __.gitignore__ => lista di files che devono essere ignorati da git  
+> __angular.json__ => file di configurazione per angular  
+> __package-lock.json__ => output delle dipendenze node e altro  
+> __package.json__ => file di configurazione npm  
+> __README.MD__ => descrizione testuale dell'app  
+> __tsconfig.json__ => file di configurazione typescript  
+> __tslint.json__ => configurazione del linter  
+
+Per ora non preoccupiamoci di tutti questi files di configurazione e iniziamo a dire che il codice in un app Angular viene scritto all'interno della directory __src__. Apriamo questa cartella:
+
+> * app/
+> * assets/
+> * environments/  
+> browserslist  
+> favicon.ico  
+> index.html  
+> karma.conf.js  
+> main.ts  
+> polyfills.ts
+> styles.css  
+> test.ts  
+> tsconfig.app.json  
+> tsconfig.spec.json  
+> tslint.json  
+
 
 ### __Aggiungiamo bootstrap al progetto__
 
