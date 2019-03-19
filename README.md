@@ -188,7 +188,8 @@ In pratica verranno creati:
 
 ### __Start the project__
 
-Angular include un web server, quindi possiamo facilmente eseguire una _build_ e servire la nostra app in locale sul nostro pc.  
+Angular include un web server, quindi possiamo facilmente eseguire una _build_ e servire la nostra app in locale sul nostro pc. Per far questo dobbiamo utilizzare un terminale su mac oppure su windows possiamo utilizzare la _Windows Command Prompt_, o la _Powershell_ ma io consiglio di installare anche la Git bash, puoi trovarla [qui](https://git-scm.com/downloads).  
+Inoltre utilizzeremo alcuni comandi unix per muoverci nel filesystem da terminale.  
 
 1- Entra nella directory del tuo workspace  
 
@@ -283,8 +284,33 @@ e guardiamo il file __index.html__:
 ![index.html image](./covers/index-html.png)  
 
 Questo documento html è il punto di partenza della nosta app e il codice viene iniettato nel tag `<app-root></app-root>`.  
+
+Il motivo per cui queste app vengono definite __SPA__ (_Single Page Application_) è proprio questo: al contrario di un sito web che tipicamente carica dal server più documenti html (`index.html, about.html, contacts.html` per esempio) in questo tipo di app ce n'è solo uno che viene il cui cosice necessario (html, css, js) viene ricompilato dinamicamente in base alle azioni dell'utente e ad altri fattori, grazie a _Javascript_ e ai moderni Browsers.
+
 Ora apriamo la cartella __app/__ e diamo un'occhiata al file __app.component.ts__:
 ![index.html image](./covers/app.component.ts.png)  
+
+Questo è un file _Typescript_ dove viene definito un componente angular, per la precisione qui viene definito il __root__ component, cioè il componente alla base della struttura di _components_ di un app Angular. Il componente viene creato attraverso l'utilizzo del _decorator_ `@Component` che serve proprio per questo scopo. Se guardiamo il valore della chiave `selector` (che definisce il selettore html del componente) vediamo che è `app-root`, cioè lo stesso di `<app-root></app-root>` che c'è nel nostro __index.html__.  
+
+Quindi le opzioni di questo _decorator_ `@Component` sono:
+
+* `selector`: definisce il selector cioè il tag da usare per questo componente  
+* `templateUrl`: è il path del file html dove viene definito il layout del componete, in questo caso _app.component.html_  
+* `styleUrls`: array con i paths dei "_fogli di stile" del componente, in questo caso c'è _app.component.scss_
+
+Infatti qui, in __app.component.html__ viene definito il layout del componente attraverso l'uso di tags html e di _directives_ angular che consentono di utilizzare typescript e di rendere dinamica la nostra app:
+![snippet image](./covers/app.component.html.png)  
+
+Mentre __app.component.scss__ (`scss` è che è un'evoluzione del css per dirla in un modo semplice) serve a definire lo stile del componente.  
+
+### _Run your app__
+
+È arrivato il momento di fare partire la nostra app
+
+### __Angular Component__  
+
+In questa guida sto citando continuamete la parola "componente", ma che cos'è un componente in questo contesto? 
+
 
 ### __Aggiungiamo bootstrap al progetto__
 
