@@ -204,9 +204,9 @@ L'opzione `--open` (che si può lanciare anche con la shortcut `--o`) fa aprire 
 
 (anche questo tradotto dalla [doc ufficiale di Angular](https://angular.io/guide/quickstart))
 
-Fantastico hai appena fatto partire la tua prima app Angular 🎉🎉🎉✌️😺!!!
+Fantastico! Se è andato tutto secondo i piani la tua prima app Angular è in eseguzione su [http://localhost:4200/](http://localhost:4200/) 🎉🎉🎉✌️😺!!!
 
-L'app che sta girando su [http://localhost:4200/](http://localhost:4200/) è solo un , un punto di partenza per iniziare a creare la tua app. Ora puoi creare le tue pagine e i tuoi componenti per strutturare la tua app come vuoi.  
+La web app servita su [http://localhost:4200/](http://localhost:4200/) è solo un _boilerplate_, un punto di partenza per iniziare a creare la tua app personalizzata. Ora puoi creare le tue pagine e i tuoi componenti per strutturare la tua app come vuoi.  
 
 Apri la cartella dove hai creato la tua app nel tuo __editor di testo__ preferito, io personalmete uso [Visual Studio Code](https://code.visualstudio.com/) a mio avviso uno strumento di lavoro fantastico e di cui si parla anche [qui](https://angular.io/guide/language-service#visual-studio-code), nella doc ufficiale di Angular, ma usa l'editor che vuoi, ce ne sono molti validi ([Atom](https://atom.io/), [Sublime Text ](https://www.sublimetext.com/), [Vim](https://www.vim.org/), [Brackets](http://brackets.io/)...) e troverai una struttura del genere:
 
@@ -303,30 +303,43 @@ Infatti qui, in __app.component.html__ viene definito il layout del componente a
 
 Mentre __app.component.scss__ (`scss` è che è un'evoluzione del css per dirla in un modo semplice) serve a definire lo stile del componente.  
 
-### _Run your app__
+### ___Cos’è un framework css___  
 
-È arrivato il momento di fare partire la nostra app
+A proposito di stile, nei processi di sviluppo web moderni per uniformare lo stile ed avere una base di css più moderna vengono utilizzati i __frameworks CSS__.  
 
-### __Angular Component__  
-
-In questa guida sto citando continuamete la parola "componente", ma che cos'è un componente in questo contesto? 
-
+> Un framework CSS è un framework software progettato per consentire una progettazione Web più semplice e conforme agli standard utilizzando il linguaggio Cascading Style Sheets. La maggior parte di questi framework contiene almeno una griglia. I framework più funzionali sono inoltre dotati di più funzioni e funzioni aggiuntive basate su JavaScript, ma sono principalmente orientati al design.  
+(https://en.wikipedia.org/wiki/CSS_framework)
 
 ### __Aggiungiamo bootstrap al progetto__
 
+Per la nostra app ho scelto di usare [Bootstrap](https://getbootstrap.com/) il primo dei framerworks CSS creato per _Twitter_ da Mark Otto e Jacob Thornton per uniformare i componenti che componevano l'interfaccia web. Ancora oggi è uno dei framework più utilizzati nella sua catgorie e, nella mia esperienza, conoscerlo bene velocizza il processo produttivo in modo devastante.  
+
+Quindi procediamo, aggiungiamo bootstrap come dipendenza della nostra app utilizzando __npm__. Vai sul terminale dove hai lanciato `ng serve --open` e premi `ctrl + c` per fermare il processo. Ora scrivi:  
+
+`npm install bootstrap`  
+
+Poi vai nel file __angular.json__ (al primo livello dell'app) e fai questa modifica:
+![img snippet](./covers/bb.png)  
 
 
-### ___cos’è un framework css___
+Ultimo passo vai in __src/styles.css__ e aggiungi:  
+![img snippet](./covers/aa.png)  
+
+Fatto abbiamo il css di bootstrap nella nosta app 😎👍!!
 
 ### __il tuo primo componente__
 
-### __navab__
+In questa guida sto citando continuamete la parola "componente", ma che cos'è un componente in questo contesto? Un componente controlla una parte dell'interfaccia grafica, per esempio può essere una pagina oppure un footer o una lista. In pratica i componenti sono i "_blocchi_" con cui costruiamo la nostra app.  
+Un componente detto _parent_ può essere costruito avendo al suo interno uno o più componenti _child_.
+Come ho detto prima per implementare un componente dobbiamo utilizzare il _decorator_ `@Component` settando opzioni tipo `template`, `templateUrl`, `stylesUrls`, `selector` e tanti altri (se sei curioso guarda [qui](https://angular.io/api/core/Component)).  
 
-### __home page__
+Possiamo scrivere tutto a mano, oppure possiamo generare un componente utilizzare il potentissimo CLI di Angular. Genera la navbar della tua app, vai sul terminale e scrivi:
 
-### __about page__
+`ng g c navbar`  
 
-### __routing__
+Come vedi è stata generata una cartella `navbar` con 4 files:  
 
-
-## Link e informazioni utili per continuare da soli
+* navbar.component.scss  
+* navbar.component.html  
+* navbar.component.spec.ts  
+* navbar.component.ts  
