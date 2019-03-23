@@ -49,10 +49,10 @@ Ogni nome di dominio termina con un “.” (punto). Ad esempio l'indirizzo wiki
 
 ![Git logo](./covers/git-logo.png)
 
-Git è un software di controllo versione distribuito utilizzabile da interfaccia a riga di comando, creato dal grande Linus Torvalds nel 2005.
-Qusto strumento nacque con lo scopo di facilitare lo sviluppo del kernel Linux ed è diventato uno degli strumenti di controllo versione più diffusi al mondo.
-Imparare ad utilizzare questo strumento è fondamentale per sviluppare software al giorno d'oggi. Questo sistema di lavoro collabarativo consente di lavorare al codice aggiungendo le nuove modifiche man mano vengono fatte,se si sbaglia o per qualche altro motivo possiamo tornare indietro alle modifiche precedenti e correggere il codice. 
-Git, tra le alre cose, consente di creare nuovi _branches_ (cloni del codice sorgente al momento della creazione) per sviluppare in parallelo versioni diverse partendo dalla stessa basa di codice. 
+Git è un software di controllo versione distribuito utilizzabile da interfaccia a riga di comando, creato dal grande [Linus Torvalds](https://it.wikipedia.org/wiki/Linus_Torvalds) nel 2005.
+Questo strumento nacque con lo scopo di facilitare lo sviluppo del [kernel Linux](https://it.wikipedia.org/wiki/Linux_(kernel)) ed è diventato uno degli strumenti di controllo versione più diffusi al mondo.
+Imparare ad utilizzare questo strumento è fondamentale per sviluppare software al giorno d'oggi. Questo sistema di lavoro collabarativo consente di lavorare al codice aggiungendo le nuove modifiche man mano vengono fatte. Se si sbaglia o se per qualche altro motivo ne abbiamo la necessità, possiamo tornare indietro alle modifiche precedenti e correggere il codice.  
+Git, tra le alre cose, consente di creare nuovi _branches_ (cloni del codice sorgente al momento della creazione) per sviluppare in parallelo versioni diverse partendo dalla stessa basa di codice.  
 Le possibilità date da _git_ sonno davvero tante e danno ai developers uno strumento potentissimo che li aiuta a creare codice di qualità, mantenibile e scalabile.
 Permettetemi di dire che git ci "salva la vita" quando siamo responsabili dello sviluppo del nostro codice, ci permette di correggere gli errori che spesso facciamo (come è normale che sia) e ci costringe ad avere un approccio al codice davvero intelligente. Quindi IMPARATELO! È a vostro esclusivo vantaggio.
 
@@ -95,7 +95,7 @@ Inoltre Javascript è anche conosciuto per essere "_The Most Misunderstood Progr
 
 Uno dei pricipali motici del successo di Javascript negli ultimi anni è proprio __Node.js__.
 
-Node.js è una piattaforma Open source event-driven per l'esecuzione di codice JavaScript Server-side, costruita sul motore JavaScript V8 di Google Chrome. Molti dei suoi moduli base sono scritti in JavaScript, e gli sviluppatori possono scrivere nuovi moduli in JavaScript.
+Node.js è una piattaforma Open source event-driven per l'esecuzione di codice JavaScript Server-side, costruita sul motore JavaScript [V8](https://v8.dev/) di Google Chrome. Molti dei suoi moduli base sono scritti in JavaScript, e gli sviluppatori possono scrivere nuovi moduli in JavaScript.  
  In origine JavaScript veniva utilizzato principalmente lato client. In questo scenario gli script JavaScript, generalmente incorporati all'interno dell'HTML di una pagina web, vengono interpretati da un motore di esecuzione incorporato direttamente all'interno di un Browser. Node.js consente invece di utilizzare JavaScript anche per scrivere codice da eseguire lato server, ad esempio per la produzione del contenuto delle pagine web dinamiche prima che la pagina venga inviata al Browser dell'utente. Node.js in questo modo permette di implementare il cosiddetto paradigma "JavaScript everywhere" (Javascript ovunque), unificando lo sviluppo di applicazioni Web intorno ad un unico linguaggio di programmazione : __JavaScript__.  
 (da [wikipedia](https://it.wikipedia.org/wiki/Node.js))
 
@@ -285,7 +285,7 @@ e guardiamo il file __index.html__:
 
 Questo documento html è il punto di partenza della nosta app e il codice viene iniettato nel tag `<app-root></app-root>`.  
 
-Il motivo per cui queste app vengono definite __SPA__ (_Single Page Application_) è proprio questo: al contrario di un sito web che tipicamente carica dal server più documenti html (`index.html, about.html, contacts.html` per esempio) in questo tipo di app ce n'è solo uno che viene il cui cosice necessario (html, css, js) viene ricompilato dinamicamente in base alle azioni dell'utente e ad altri fattori, grazie a _Javascript_ e ai moderni Browsers.
+Il motivo per cui queste app vengono definite __SPA__ (_Single Page Application_) è proprio questo: al contrario di un sito web che tipicamente carica dal server più documenti html (`index.html, about.html, contacts.html` per esempio) in questo tipo di app ce n'è solo uno. Il codice necessario (`HTML`, `CSS` e `javascript`) viene ricompilato dinamicamente in base alle azioni dell'utente e ad altri fattori. Tutto ciò grazie a _Javascript_ e grazie alle `api` dei moderni Browsers.
 
 Ora apriamo la cartella __app/__ e diamo un'occhiata al file __app.component.ts__:
 ![index.html image](./covers/app.component.ts.png)  
@@ -327,7 +327,7 @@ Ultimo passo vai in __src/styles.css__ e aggiungi:
 
 Fatto abbiamo il css di bootstrap nella nosta app 😎👍!!
 
-### __il tuo primo componente__
+### __Il tuo primo componente__
 
 In questa guida sto citando continuamete la parola "componente", ma che cos'è un componente in questo contesto? Un componente controlla una parte dell'interfaccia grafica, per esempio può essere una pagina oppure un footer o una lista. In pratica i componenti sono i "_blocchi_" con cui costruiamo la nostra app.  
 Un componente detto _parent_ può essere costruito avendo al suo interno uno o più componenti _child_.
@@ -344,4 +344,16 @@ Come vedi è stata generata una cartella `navbar` con 4 files:
 * navbar.component.spec.ts  
 * navbar.component.ts  
 
+I files `.scss`, `.ts`, `.html` fuzionano esattamente come per `app.component`: abbiamo un controller (il file _.ts_) dove viene scritta la logica del componente, un template che è il file _.html_ dove viene definito il _layout_ del componente e infine abbiamo un foglio di stile dedicato al componente, cioè nel nostro caso il file _.scss_.  
 
+Ho deciso di creare una `navbar` (conosciuta anche come `topbar`) come componente perchè è un componente __comune__ a tutte le pagine e quindi lo inserireremo in `app.component.html` in modo che sia sempre presente nella nostra app.  
+
+## __Link utili per proseguire da soli__
+
+Il pattern degli argomenti trattati in questo `README` è stato ispirato da [questo bellissimo repo](https://github.com/kamranahmedse/developer-roadmap) che vi consiglio di guardare e dove potrete trovare una vera e propria _road map_ degli argomenti da imparare per esercitare al meglio da professione del __web developer__.
+
+__Link utili__:  
+
+* [__Front-End Developer Handbook 2018__](https://frontendmasters.com/books/front-end-handbook/2018/) Written by Cody Lindley  
+* [__gitconnected.com__](https://gitconnected.com/learn) Find Coding Tutorials & Courses  
+* [__egghead__](https://egghead.io/) learn to code by awesome tutorials
