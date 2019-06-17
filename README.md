@@ -1,5 +1,5 @@
 # Introduzione allo sviluppo web con Angular  
-Per poter utilizzare in modo efficace Angular, un moderno framework di Google per lo sviluppo di applicazioni Web, abbiamo bisogno di avere alcune conoscenze generali sullo sviluppo web in generale.
+Per poter utilizzare in modo efficace Angular, un moderno framework di Google per lo sviluppo di applicazioni Web, abbiamo bisogno di avere alcune conoscenze sullo sviluppo web in generale.
 
 ## Le basi di una pagina web
 
