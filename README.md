@@ -1,10 +1,13 @@
-# Introduzione allo sviluppo web con Angular
+# Introduzione allo sviluppo web con Angular  
+Per poter utilizzare in modo efficace Angular, un moderno framework di Google per lo sviluppo di applicazioni Web, abbiamo bisogno di avere alcune conoscenze generali sullo sviluppo web in generale.
 
 ## Le basi di una pagina web
 
 I principali linguaggi con cui vengono create le pagine web sono 3 ognuno dei quali ha uno scopo ben preciso:
 
-* __HTML__ con questo linguaggio si definisce la __struttura__ (layout) di una pagina web attraverso lutilizzo di diversi __tag__ che rappresentano i diversi componenti di una pagina. La pagina ha una struttura che si divide in 2 parti: l'_header_ dove vengono definiti i [metatags](https://it.wikipedia.org/wiki/Meta_tag) e il _body_ dove viene definito il layout della pagina.
+* __HTML__ (_HyperText Markup Language_) con questo linguaggio si definisce la __struttura__ (layout) di una pagina web attraverso lutilizzo di diversi __tag__ che rappresentano i diversi componenti di una pagina. La pagina ha una struttura che si divide in 2 parti: l'_header_ dove vengono definiti i [metatags](https://it.wikipedia.org/wiki/Meta_tag) e il _body_ dove viene definito il layout della pagina.  
+Quindi cos'è esattamente l'HTML? HTML fornisce una struttura al contenuto (immagini, testo o video) che appare su un sito Web. Se provi a far clic con tasto destro su qualsiasi pagina Internet e selezioni "Ispeziona" oppure "Visualizza sorgente pagina", vedrai il codice HTML della pagina che stai visualizzando.  
+Imparare l'HTML è sicuramente il primo passo da fare per poter realizzare siti web e applicazioni.
 * __CSS__ (Cascading Style Sheets) è un linguaggio che serve a definire lo _style_ degli elementi di un documento HTML. Gli stili possono essere applicati globalmente su tutti gli elementi di una certa categoria oppure attraverso l'uso di classi o id applicati su tags HTML (<code>body, p, div, button, ul, li....</code>) nel documento HTML stesso.
 * __javascript__ In informatica JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso (mouse, tastiera, caricamento della pagina ecc...) (da [wikipedia](https://it.wikipedia.org/wiki/JavaScript)).  
 Le pagine Web non sono l'unico posto in cui viene utilizzato JavaScript. Molti programmi desktop, server e alcuni database usano JavaScript come linguaggio di programmazione. Torneremo su questo argomento in modo più approfondito nei prossimi paragrafi.
@@ -346,7 +349,14 @@ Come vedi è stata generata una cartella `navbar` con 4 files:
 
 I files `.scss`, `.ts`, `.html` fuzionano esattamente come per `app.component`: abbiamo un controller (il file _.ts_) dove viene scritta la logica del componente, un template che è il file _.html_ dove viene definito il _layout_ del componente e infine abbiamo un foglio di stile dedicato al componente, cioè nel nostro caso il file _.scss_.  
 
-Ho deciso di creare una `navbar` (conosciuta anche come `topbar`) come componente perchè è un componente __comune__ a tutte le pagine e quindi lo inserireremo in `app.component.html` in modo che sia sempre presente nella nostra app.  
+Ho deciso di creare una `navbar` (conosciuta anche come `topbar`) come componente perchè è un componente __comune__ a tutte le pagine e quindi lo inserireremo in `app.component.html` in modo che sia sempre presente nella nostra app (vedi file `src/app/app.component.html`).  
+
+
+Ora vai sulla _doc_ di _bootstrap_ a [questo link](https://getbootstrap.com/docs/4.3/components/navbar/#placement), copiati questo snippet di codice da cui potrai partire.
+![code snippet](./covers/navbar.png)  
+
+Perfetto ora incollalo in `navbar.component.html` al posto del contenuto che c'è ora e salva il file.  
+Ti ho fatto andare nella pagina di doc di bootstrap perchè è quello che faccio io quando devo creare un componente basato sullo stile di bootstrap in Angular.  Come vedi la documentazione di bootstrap è molto dettagliata e si possono trovare una serie di componenti con i relativi esempi che possiamo usare come _boilerplate_ per il layout dei componenti della nostra app.  
 
 ## __Link utili per proseguire da soli__
 
