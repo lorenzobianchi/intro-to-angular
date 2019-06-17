@@ -1,5 +1,7 @@
 # Introduzione allo sviluppo web con Angular  
-Per poter utilizzare in modo efficace Angular, un moderno framework di Google per lo sviluppo di applicazioni Web, abbiamo bisogno di avere alcune conoscenze sullo sviluppo web in generale.
+Angular è un moderno framework di Google pensato per lo sviluppo di applicazioni Web. È stato progettato per fornire uno strumento facile e veloce per sviluppare applicazioni che girano su qualunque piattaforma inclusi smartphone e tablet.  
+Per avere un'idea di ciò che è possibile fare con Angular potete visitare [questo sito](https://www.madewithangular.com/) dove troverete numerosi casi di app e siti che utilizzano questa tecnologia.  
+Per poter utilizzare in modo efficace Angular abbiamo bisogno di avere alcune conoscenze sullo sviluppo web in generale.
 
 ## Le basi di una pagina web
 
@@ -18,14 +20,14 @@ Prima di passare a cose più avanzate ti consiglio di prendere familiarità con 
 ## Come funziona internet 🤔
 
 Ora parleremo in modo introduttivo di alcuni argomenti che riguardano il funzionamento del web e che, a mio avviso, è necessario sapere se si vuole intraprendere la professione del web developer nel 2019.  
-Non serve imparare alla perfezione i dettagli tecnici, ma avere un'idea di come funzionana internet ci aiuta a prendere le giuste decisioni nello sviluppare web app, siti....
+Non serve imparare alla perfezione i dettagli tecnici, ma avere un'idea di come funziona internet ci aiuta a prendere le giuste decisioni nello sviluppare web app, siti....
 
 ### __Browsers__
 
 In informatica il web browser (traducibile come _navigatore_) è un'applicazione per l'acquisizione, la presentazione e la navigazione di risorse sul web. Tali risorse (come pagine web, immagini o video) sono messe a disposizione sul World Wide Web (la rete globale che si appoggia su Internet), su una rete locale o sullo stesso computer dove il browser è in esecuzione. Il programma implementa da un lato le funzionalità di client per il protocollo HTTP, che regola il download delle risorse dai server web a partire dal loro indirizzo URL; dall'altro quelle di visualizzazione dei contenuti ipertestuali (solitamente all'interno di documenti HTML) e di riproduzione di contenuti multimediali. (da [wikipedia](https://it.wikipedia.org/wiki/Browser))  
 
 In pratica un browser Web o browser è un programma che recupera e visualizza pagine dal Web e consente agli utenti di accedere a ulteriori pagine tramite l'utilizzo di _hyperlinks_.
-I broweser più utilizzati sono:
+I browsers più utilizzati sono:
 
 * [Google Chrome](https://www.google.com/chrome/) 
 * [Internet Explorer](https://it.wikipedia.org/wiki/Internet_Explorer)
